@@ -1,9 +1,23 @@
-#app{
-    font-family: 'Arial', sans-serif;
-    border-radius: 4px;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-    border: 2px solid red;
+:root {
+    /* vars */
+    
+    --hue1: 255;
+    --hue2: 222;
+    --border: 1px;
+    --border-color: hsl(var(--hue2), 12%, 20%);
+    --radius: 22px;
+    --ease: cubic-bezier(0.5, 1, 0.89, 1);
+    
+}
+
+
+#menu {
+    visibility: hidden; 
+    opacity: 0;
+    pointer-events: none;
+    transition-property: visibility, opacity, filter;
+    transition-duration: 0s, 0.25s, 0.25s;
+    transition-delay: 0.5s, 0s, 0s;
+    transition-timing-function: var(--ease);
+    filter: blur(4px);
 }

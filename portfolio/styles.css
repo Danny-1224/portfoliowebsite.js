@@ -11,6 +11,10 @@
     
 }
 
+/* #bodys{
+    background-color: bisque;
+} */
+
 #menu {
     visibility: hidden;
     opacity: 0;
@@ -84,7 +88,6 @@
     }
 }
 
-#menu .shine,
 #menu .glow {
     --hue: var(--hue1);
 }
@@ -95,6 +98,7 @@
 }
 
 #menu .shine {
+ --hue: var(--hue1);
 }
 
 #menu .shine,
@@ -128,7 +132,7 @@
     
     mask: 
         linear-gradient(transparent), 
-        linear-gradient(black);
+        linear-gradient(rgb(0, 0, 0));
     mask-repeat: no-repeat;
     mask-clip: padding-box, border-box;
     mask-composite: subtract;
@@ -401,11 +405,11 @@ body, #app {
 #app > header h1,
 #app > header p {
     margin: 0;
-    color: color-mix(in oklab, var(--fg) 70%, hsl(var(--hue1) 50% 50%));
+    color: whitesmoke;
 }
 
 #app > header p {
-    color: color-mix(in oklab, var(--fg) 40%, hsl(var(--hue2) 50% 50%));
+    color: whitesmoke;
 }
 
 #app > footer {
@@ -419,6 +423,7 @@ body, #app {
 #app > footer h2 {
     width: 100%;
     font-size: 1em;
+    color: whitesmoke;
 }
 
 #app > footer [type=range] {
@@ -462,6 +467,14 @@ body, #app {
     fill: none;
     stroke-width: 1;
     height: 20px;
+}
+
+.social-icon svg{
+    border-radius: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: whitesmoke;
+    fill: #202227;
 }
 
 
