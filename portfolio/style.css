@@ -12,8 +12,8 @@
 
 
 #menu {
-    /* visibility: hidden; 
-    opacity: 0; */
+    visibility: hidden; 
+    opacity: 0;
     pointer-events: none;
     transition-property: visibility, opacity, filter;
     transition-duration: 0s, 0.25s, 0.25s;
