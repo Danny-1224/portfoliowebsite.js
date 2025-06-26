@@ -12,12 +12,26 @@
 
 
 #menu {
-    visibility: hidden; 
-    opacity: 0;
+    /* visibility: hidden; 
+    opacity: 0; */
     pointer-events: none;
     transition-property: visibility, opacity, filter;
     transition-duration: 0s, 0.25s, 0.25s;
     transition-delay: 0.5s, 0s, 0s;
     transition-timing-function: var(--ease);
     filter: blur(4px);
+
+     font-family: 'Asap', sans-serif;
+    color: #737985;
+    position: fixed;
+    top: 140px;
+    left: 2svw;
+    min-width: 275px;
+    min-height: 275px;
+    border-radius: var(--radius);
+    border: var(--border) solid var(--border-color);
+    padding: 1em;
+    background: linear-gradient(235deg, hsl(var(--hue1) 50% 10% / 0.8), hsl(var(--hue1) 50% 10% / 0) 33%), linear-gradient(45deg , hsl(var(--hue2) 50% 10% / 0.8), hsl(var(--hue2) 50% 10% / 0) 33%), linear-gradient(hsl(220deg 25% 4.8% / 0.66));
+    backdrop-filter: blur(12px);
+    box-shadow: hsl(var(--hue2) 50% 2%) 0px 10px 16px -8px, hsl(var(--hue2) 50% 4%) 0px 20px 36px -14px;
 }
