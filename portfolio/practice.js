@@ -35,3 +35,4 @@ document.addEventListener("contextmenu", (event) => {
     }
     
 });
+
