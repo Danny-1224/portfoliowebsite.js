@@ -36,3 +36,7 @@ document.addEventListener("contextmenu", (event) => {
     
 });
 
+document.addEventListener('pointerdown', (event) => {
+    const $target = event.target;
+    const isMenu = $menu.contains( $target );
+    const isSlider = $target.matches( 'input' );
