@@ -51,3 +51,10 @@ document.addEventListener('pointerdown', (event) => {
         }
     }
 });
+
+$hue1.addEventListener( 'input', (event) => {
+    requestAnimationFrame(() => {
+        document.body.style.setProperty('--hue1', event.target.value );
+        $menu.classList.add('open');
+    })
+});
