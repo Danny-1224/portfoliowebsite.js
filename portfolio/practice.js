@@ -65,3 +65,10 @@ $hue2.addEventListener( 'input', (event) => {
         $menu.classList.add('open');
     })
 });
+
+const rand1 = 120 + Math.floor(Math.random() * 240);
+const rand2 = rand1 - 80 + (Math.floor(Math.random() * 60) - 30);
+$hue1.value = rand1;
+$hue2.value = rand2;
+document.body.style.setProperty('--hue1', rand1 );
+document.body.style.setProperty('--hue2', rand2 );
