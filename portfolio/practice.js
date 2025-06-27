@@ -58,3 +58,10 @@ $hue1.addEventListener( 'input', (event) => {
         $menu.classList.add('open');
     })
 });
+
+$hue2.addEventListener( 'input', (event) => {
+    requestAnimationFrame(() => {
+        document.body.style.setProperty('--hue2', event.target.value );
+        $menu.classList.add('open');
+    })
+});
