@@ -40,3 +40,14 @@ document.addEventListener('pointerdown', (event) => {
     const $target = event.target;
     const isMenu = $menu.contains( $target );
     const isSlider = $target.matches( 'input' );
+    if( !isMenu && !isSlider ) {
+        $menu.classList.remove('open');
+    } else if (isMenu) {
+        $li.forEach($el => {
+          $el.classList.remove('selected');  
+        })
+        if ( $target.matches('li') ) {
+            $target.classList.add('selected');
+        }
+    }
+});
